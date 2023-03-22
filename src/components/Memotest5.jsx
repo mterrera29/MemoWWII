@@ -212,7 +212,7 @@ const Memotest5 = () => {
             </div>
           )}
         </div>
-        <div>
+        <div className='puntosContainer3'>
           <h1>{`Puntos: ${puntosCounter} pts`}</h1>
         </div>
         {win === true && (

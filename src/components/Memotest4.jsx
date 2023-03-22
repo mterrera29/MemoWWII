@@ -276,6 +276,13 @@ const Memotest4 = () => {
                     <img alt='' className='cara' src={lastGuessed[0].cara} />
                   </div>
                   <div>
+                    <img
+                      alt=''
+                      className='bandera2'
+                      src={lastGuessed[0].bandera}
+                    />
+                  </div>
+                  <div>
                     <p>{lastGuessed[0].info}</p>
                     <button
                       style={{ fontSize: '20px', margin: '10px' }}
@@ -289,13 +296,6 @@ const Memotest4 = () => {
                     >
                       Continuar
                     </button>
-                  </div>
-                  <div>
-                    <img
-                      alt=''
-                      className='bandera'
-                      src={lastGuessed[0].bandera}
-                    />
                   </div>
                 </div>
               </div>

@@ -255,10 +255,10 @@
       color: rgb(72, 187, 72)
     }
     .modal h2{
-      font-size: 0px;
+      font-size: 20px;
     }
     .modalNombre{
-      font-size: 25px;
+      font-size: 35px;
       border-bottom: solid 0px #666;;
       }
   
@@ -270,13 +270,13 @@
       margin: 13px;
     }
     .modalInfo img{
-      width: 120px;
+      width: 220px;
       height: auto;
       border-radius: 14px;
     }
     .modalInfo p{
       margin: 10px;
-      font-size: 15px;
+      font-size: 20px;
       line-height: 18px;
     }
     .modalPts{
