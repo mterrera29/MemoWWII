@@ -1,0 +1,63 @@
+.imagenContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:900px;
+  height: 500px;
+  background-color: #242424;
+  border-radius: 15px;
+  border: solid 1px #666;
+  margin: 10px;
+  background-image: url("../images/bg1.jpg");
+  background-size: cover;
+}
+
+.imgLider{
+  position: absolute;
+  bottom: 0px;
+  width: auto;
+  height: 400px;
+  
+}
+
+.nombreLider{
+  position: absolute;
+  bottom: 30px;
+}
+
+.pistaLider{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  max-width: 150px;
+}
+
+.titulo{
+  font-size: 40px;
+  color: #242424;
+  position: absolute;
+  top: 10px;
+}
+.modalWin3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:40%;
+  height: min-content;
+  margin: 10px;
+  background-color: #242424;
+  border-radius: 15px;
+  border: solid 1px #666;
+  z-index: 3;
+}
+.modalPts3{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: rgb(248, 248, 98);
+}
