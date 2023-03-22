@@ -179,9 +179,6 @@ const Memotest3 = () => {
     <div className='contain'>
       <main>
         <div className='center'>
-          <div className='puntosContainer'>
-            <h2>{`${puntosCounter} Pts`}</h2>
-          </div>
           <ul className='container3'>
             {images.map((image, index) => (
               <li
@@ -225,6 +222,9 @@ const Memotest3 = () => {
               </li>
             ))}
           </ul>
+          <div className='puntosContainer'>
+            <h2>{`${puntosCounter} Pts`}</h2>
+          </div>
           <div className='puntosContainer'>
             <h3>{selected.length >= 1 ? selected[0].name : ' '}</h3>
             <h3>{selected.length >= 2 ? selected[1].name : ' '}</h3>
