@@ -11,7 +11,6 @@ function App() {
   return (
     <PuntosProvider>
       <BrowserRouter>
-        <MemoMain />
         <div className='App'>
           <Routes>
             <Route exact element={<MemoMain />} path='/' />
