@@ -167,7 +167,6 @@ const Memotest5 = () => {
           </h1>
           {pistas > 0 && (
             <div className='pistaLider'>
-              <h2>Pista</h2>
               <h3>{pistas === 1 && lider[index].pista1}</h3>
               <h3>{pistas === 2 && lider[index].pista2}</h3>
               <h3>{pistas === 3 && lider[index].pista3}</h3>
@@ -201,7 +200,11 @@ const Memotest5 = () => {
                 Solicitar pista
               </button>
               <form onSubmit={handleSubmit}>
-                <input type='text' onChange={(e) => setName(e.target.value)} />
+                <input
+                  style={{ width: '150px' }}
+                  type='text'
+                  onChange={(e) => setName(e.target.value)}
+                />
                 <button
                   style={{ fontSize: '16px', margin: '10px', padding: '5px' }}
                   type='submit'

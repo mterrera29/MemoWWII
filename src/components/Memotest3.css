@@ -37,6 +37,7 @@
       ". . . . "
   }
   .puntosContainer{
+    margin: 5px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -215,7 +216,7 @@
       display: grid; 
       grid-template-columns: 1fr 1fr 1fr ; 
       grid-template-rows: 1fr 1fr 1fr 1fr; 
-      gap: 10px; 
+      gap: 15px; 
       grid-template-areas: 
         ". . . "
         ". . . "
@@ -224,6 +225,8 @@
     }
     .puntosContainer h3{
       display: inline-block;
+      font-size: 25px;
+      margin: 15px;
       height:50px;
       width: 110px;
     }
@@ -236,7 +239,7 @@
       height: 100px;
     }
     .container3{
-      gap: 2px;
+      gap: 6px;
     }
     .front h3{
       font-size: 16px;
@@ -254,11 +257,11 @@
       font-size: 30px;
       color: rgb(72, 187, 72)
     }
-    .modal h2{
-      font-size: 20px;
+    .modal div h2{
+      font-size: 35px;
     }
     .modalNombre{
-      font-size: 35px;
+      font-size: 40px;
       border-bottom: solid 0px #666;;
       }
   
@@ -270,27 +273,27 @@
       margin: 13px;
     }
     .modalInfo img{
-      width: 220px;
+      width: 270px;
       height: auto;
       border-radius: 14px;
     }
     .modalInfo p{
       margin: 10px;
-      font-size: 20px;
-      line-height: 18px;
+      font-size: 25px;
+      line-height: 25px;
     }
     .modalPts{
       position: absolute;
       top: 5px;
       left: 5px;
       color: rgb(248, 248, 98);
-      font-size: 25px;
+      font-size: 35px;
     }
     .modalBandera{
       position: absolute;
       top: 5px;
       right: 5px;
-      width: 70px;
+      width: 100px;
       height: auto;
     }
     .modalBtn{
