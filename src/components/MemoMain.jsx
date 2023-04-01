@@ -15,7 +15,7 @@ const Main = () => {
             textAling: 'center',
           }}
         >
-          <h1>MEMO WWII</h1>
+          <h1 className='mainTitulo'>MEMO WWII</h1>
           <h2 style={{ fontSize: '28px', margin: '10px', textAlign: 'center' }}>
             Lideres de la Segunda Guerra Mundial
           </h2>

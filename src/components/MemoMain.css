@@ -1,5 +1,4 @@
 .App{
-  
     margin: auto;
     padding: auto;
     width: 100%;
@@ -17,4 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+   .mainTitulo{
+    font-family: Deathe;
   }

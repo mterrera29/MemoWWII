@@ -127,15 +127,15 @@ const Memotest5 = () => {
         setPuntosTotal(puntosTotal + puntosCounter);
       }
     } else {
-      setPuntos(puntos - 1);
+      puntos > 1 && setPuntos(puntos - 1);
       setNombre('Incorrecto');
     }
   };
 
   const handlePistas = () => {
-    if (pistas < 4 && puntos >= 1) {
+    if (pistas < 4) {
       setPistas(pistas + 1);
-      setPuntos(puntos - 1);
+      puntos > 1 && setPuntos(puntos - 1);
     }
   };
 
@@ -147,9 +147,8 @@ const Memotest5 = () => {
 
   return (
     <div>
-      <main>
+      <main className='main3'>
         <div className='imagenContainer'>
-          <h1 className='modalPts3'>{correct && `+ ${puntos} pts`}</h1>
           <h1
             className='titulo'
             style={{ color: correct ? 'rgb(72, 187, 72)' : 'black' }}
@@ -162,7 +161,14 @@ const Memotest5 = () => {
             src={lider[index].img}
             style={{ filter: correct ? '' : 'brightness(0)' }}
           />
-          <h1 className='nombreLider' style={{ fontSize: '45px' }}>
+          <h1
+            className='nombreLider'
+            style={{
+              fontSize: '45px',
+              color:
+                nombre === 'Incorrecto' ? 'red' : correct ? 'green' : 'white',
+            }}
+          >
             {nombre}
           </h1>
           {pistas > 0 && (
@@ -176,7 +182,13 @@ const Memotest5 = () => {
         </div>
         <div>
           {correct ? (
-            <div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+              }}
+            >
               <button
                 style={{ fontSize: '16px', margin: '10px', padding: '5px' }}
                 onClick={() => {
@@ -190,6 +202,7 @@ const Memotest5 = () => {
               >
                 Continuar
               </button>
+              <h2 className='modalPts3'>{correct && `+ ${puntos} pts`}</h2>
             </div>
           ) : (
             <div style={{ display: 'flex' }}>
@@ -232,7 +245,11 @@ const Memotest5 = () => {
                 <h1>{`Total: ${puntosTotal} pts`}</h1>
                 <Link to='/'>
                   <button
-                    style={{ fontSize: '20px', margin: '10px' }}
+                    style={{
+                      fontSize: '20px',
+                      margin: '10px',
+                      padding: '5px',
+                    }}
                     onClick={() => {
                       setWin(false);
                       setPuntosTotal(0);

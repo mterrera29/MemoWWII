@@ -151,7 +151,6 @@
     }
     .modalWin2{
       width:95%;
-      height:95%;
     }
     .modalWinH1{
       font-size: 30px;
@@ -197,7 +196,7 @@
       height: auto;
     }
     .modalBtn2{
-      font-size: 12px; 
-      margin: 0px;
+      font-size: 20px; 
+      padding: 5px;
     }
   }

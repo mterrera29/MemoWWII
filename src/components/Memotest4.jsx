@@ -316,7 +316,7 @@ const Memotest4 = () => {
                 <h1>{`Total: ${puntosTotal} pts`}</h1>
                 <Link to='/nivel3'>
                   <button
-                    style={{ fontSize: '20px', margin: '10px' }}
+                    style={{ fontSize: '20px', padding: '5px', margin: '10px' }}
                     onClick={() => {
                       setWin(false);
                     }}
