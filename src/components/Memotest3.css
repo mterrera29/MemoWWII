@@ -251,17 +251,17 @@
     }
     .modalWin{
       width:95%;
-      height:95%;
+      height:auto;
     }
     .modalWinH1{
-      font-size: 30px;
+      font-size: 60px;
       color: rgb(72, 187, 72)
     }
     .modal div h2{
-      font-size: 35px;
+      font-size: 25px;
     }
     .modalNombre{
-      font-size: 40px;
+      font-size: 30px;
       border-bottom: solid 0px #666;;
       }
   
@@ -273,13 +273,13 @@
       margin: 13px;
     }
     .modalInfo img{
-      width: 270px;
+      width: 230px;
       height: auto;
       border-radius: 14px;
     }
     .modalInfo p{
       margin: 10px;
-      font-size: 25px;
+      font-size: 23px;
       line-height: 25px;
     }
     .modalPts{
@@ -287,7 +287,7 @@
       top: 5px;
       left: 5px;
       color: rgb(248, 248, 98);
-      font-size: 35px;
+      font-size: 30px;
     }
     .modalBandera{
       position: absolute;

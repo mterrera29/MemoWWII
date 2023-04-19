@@ -114,6 +114,10 @@ const Memotest5 = () => {
   const [puntos, setPuntos] = useState(6);
   const [puntosCounter, setPuntosCounter] = useState(0);
 
+  const saveLocal = () => {
+    localStorage.setItem('puntos', JSON.stringify(puntosTotal + puntosCounter));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -125,6 +129,7 @@ const Memotest5 = () => {
       setPuntosCounter(puntosCounter + puntos);
       if (index === 5) {
         setPuntosTotal(puntosTotal + puntosCounter);
+        saveLocal();
       }
     } else {
       puntos > 1 && setPuntos(puntos - 1);
@@ -148,6 +153,7 @@ const Memotest5 = () => {
   return (
     <div>
       <main className='main3'>
+        <h2>Nivel 3</h2>
         <div className='imagenContainer'>
           <h1
             className='titulo'

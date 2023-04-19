@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import casco from '../images/sombrero-militar2.png';
+import '../components/MemoMain.css';
 const Main = () => {
   const [correct, setCorrect] = useState(false);
+  const puntosPartida = JSON.parse(localStorage.getItem('puntos'));
 
   return (
     <div>
-      <main>
+      <main className='memoMain'>
         <div
           style={{
             display: 'flex',
@@ -15,7 +19,19 @@ const Main = () => {
             textAling: 'center',
           }}
         >
-          <h1 className='mainTitulo'>MEMO WWII</h1>
+          <header
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAling: 'center',
+            }}
+          >
+            <img alt='' className='imgMemoM' src={casco} />
+            <h1 className='mainTitulo'>MEMO WWII</h1>
+            <img alt='' className='imgMemoM' src={casco} />
+          </header>
           <h2 style={{ fontSize: '28px', margin: '10px', textAlign: 'center' }}>
             Lideres de la Segunda Guerra Mundial
           </h2>
@@ -27,6 +43,13 @@ const Main = () => {
           >
             Continuar
           </button>
+          {puntosPartida ? (
+            <div>
+              <h2>Ultima partida: {puntosPartida} Pts. </h2>
+            </div>
+          ) : (
+            <div />
+          )}
         </div>
         {correct === true && (
           <div className='modalContainer'>

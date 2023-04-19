@@ -15,6 +15,7 @@ import src9 from '../images/banderas/francia.png';
 import src10 from '../images/banderas/italia.png';
 import src11 from '../images/banderas/england.png';
 import src12 from '../images/banderas/eeuu.png';
+import casco from '../images/sombrero-militar2.png';
 
 const lider = [
   [
@@ -195,7 +196,8 @@ const Memotest4 = () => {
   console.log(puntosTotal);
 
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
+      <h2>Nivel 2</h2>
       <main>
         <div
           style={{
@@ -251,12 +253,7 @@ const Memotest4 = () => {
                         : { border: 'solid 2px #666', borderRadius: '12px' }
                     }
                   >
-                    <img
-                      key={index}
-                      alt=''
-                      className='imgMemo'
-                      src='https://icongr.am/entypo/help.svg?size=128&color=currentColor'
-                    />
+                    <img key={index} alt='' className='imgMemo' src={casco} />
                   </div>
                 </li>
               ))}

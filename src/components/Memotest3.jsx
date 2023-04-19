@@ -15,6 +15,7 @@ import src9 from '../images/banderas/francia.png';
 import src10 from '../images/banderas/italia.png';
 import src11 from '../images/banderas/england.png';
 import src12 from '../images/banderas/eeuu.png';
+import casco from '../images/sombrero-militar2.png';
 
 const images = [
   {
@@ -173,12 +174,12 @@ const Memotest3 = () => {
       setPuntosTotal(puntosTotal + puntosCounter);
     }
   }, [guessed]);
-  console.log(puntosTotal);
 
   return (
     <div className='contain'>
-      <main>
+      <main className='memoMain'>
         <div className='center'>
+          <h2>Nivel 1</h2>
           <ul className='container3'>
             {images.map((image, index) => (
               <li
@@ -212,12 +213,7 @@ const Memotest3 = () => {
                       : { border: 'solid 1px #666', borderRadius: '12px' }
                   }
                 >
-                  <img
-                    key={index}
-                    alt=''
-                    className='imgMemo'
-                    src='https://icongr.am/entypo/help.svg?size=128&color=currentColor'
-                  />
+                  <img key={index} alt='' className='imgMemo' src={casco} />
                 </div>
               </li>
             ))}
