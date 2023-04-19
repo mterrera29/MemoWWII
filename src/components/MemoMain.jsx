@@ -36,16 +36,65 @@ const Main = () => {
             Lideres de la Segunda Guerra Mundial
           </h2>
           <button
-            style={{ fontSize: '20px', margin: '10px' }}
+            style={{
+              fontSize: '16px',
+              margin: '10px',
+              padding: '5px',
+              cursor: 'pointer',
+            }}
             onClick={() => {
               setCorrect(true);
             }}
           >
-            Continuar
+            Comenzar!
           </button>
           {puntosPartida ? (
-            <div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAling: 'center',
+              }}
+            >
               <h2>Ultima partida: {puntosPartida} Pts. </h2>
+              <Link to='/nivel1'>
+                <button
+                  style={{
+                    fontSize: '16px',
+                    margin: '10px',
+                    padding: '5px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Jugar Nivel 1
+                </button>
+              </Link>
+              <Link to='/nivel2'>
+                <button
+                  style={{
+                    fontSize: '16px',
+                    margin: '10px',
+                    padding: '5px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Jugar Nivel 2
+                </button>
+              </Link>
+              <Link to='/nivel3'>
+                <button
+                  style={{
+                    fontSize: '16px',
+                    margin: '10px',
+                    padding: '5px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Jugar Nivel 3
+                </button>
+              </Link>
             </div>
           ) : (
             <div />
@@ -61,11 +110,11 @@ const Main = () => {
                   <div>
                     <p>
                       Recuerda los rostros , nombres y apellidos de los lideres
-                      mas importantes de la Segunda Guerra Mundial
+                      más importantes de la Segunda Guerra Mundial.
                     </p>
                     <p>
                       Lee con atención la información de cada lider a lo largo
-                      del juego, Te será muy util en los proximos niveles!
+                      del juego, te será muy útil en los proximos niveles!
                     </p>
                     <Link to='/nivel1'>
                       <button

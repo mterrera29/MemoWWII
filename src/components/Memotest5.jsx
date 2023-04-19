@@ -243,7 +243,7 @@ const Memotest5 = () => {
             <div className='modalWin3'>
               <div>
                 <h1 style={{ color: 'rgb(72, 187, 72)', fontSize: '60px' }}>
-                  ¡Ganaste!
+                  ¡Ganaste el Juego!
                 </h1>
                 <div className='modalInfo2'>
                   <h2>{`Nivel 3: ${puntosCounter} pts`}</h2>

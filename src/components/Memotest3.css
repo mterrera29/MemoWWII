@@ -168,6 +168,7 @@
     flex-direction: column;
   }
   .modal h2{
+    font-size: 40px;
   color: rgb(72, 187, 72);
   }
   .modalNombre{

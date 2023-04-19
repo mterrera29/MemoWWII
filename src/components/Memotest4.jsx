@@ -156,6 +156,10 @@ const Memotest4 = () => {
   const [puntos, setPuntos] = useState(6);
   const [puntosCounter, setPuntosCounter] = useState(0);
 
+  const saveLocal = () => {
+    localStorage.setItem('puntos', JSON.stringify(puntosTotal + puntosCounter));
+  };
+
   useEffect(() => {
     if (selected.length === 2) {
       if (
@@ -190,6 +194,7 @@ const Memotest4 = () => {
   useEffect(() => {
     if (guessed.length === 12) {
       setPuntosTotal(puntosTotal + puntosCounter);
+      saveLocal();
     }
   }, [guessed]);
 

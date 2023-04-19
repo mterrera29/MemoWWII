@@ -138,6 +138,10 @@ const Memotest3 = () => {
   const [puntos, setPuntos] = useState(6);
   const [puntosCounter, setPuntosCounter] = useState(0);
 
+  const saveLocal = () => {
+    localStorage.setItem('puntos', JSON.stringify(puntosTotal + puntosCounter));
+  };
+
   useEffect(() => {
     if (selected.length === 2) {
       if (
@@ -172,6 +176,7 @@ const Memotest3 = () => {
   useEffect(() => {
     if (guessed.length === 12) {
       setPuntosTotal(puntosTotal + puntosCounter);
+      saveLocal();
     }
   }, [guessed]);
 
@@ -219,7 +224,7 @@ const Memotest3 = () => {
             ))}
           </ul>
           <div className='puntosContainer'>
-            <h2>{`${puntosCounter} Pts`}</h2>
+            <h2>{`Puntos: ${puntosCounter} Pts`}</h2>
           </div>
           <div className='puntosContainer'>
             <h3>{selected.length >= 1 ? selected[0].name : ' '}</h3>

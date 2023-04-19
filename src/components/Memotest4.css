@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
   }
   .modal2 h2{
   color: rgb(72, 187, 72);
@@ -110,16 +111,18 @@
 
   @media screen and (max-width: 1000px){
     .modalOscuro2{
-      height: 900px;
+      height: 100%;
     }
     main div h1{
       text-align: center;
     }
     .container2{
+      margin-top: 0px;
+      margin-bottom: 0px;
       display: grid; 
       grid-template-columns: 1fr ; 
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-      gap: 10px; 
+      gap: 5px; 
       grid-template-areas: 
         ". "
         ". "
@@ -140,9 +143,6 @@
     .card2{
       width: 100px;
       height: 100px;
-    }
-    .container2{
-      gap: 5px;
     }
     .front h3{
       font-size: 16px;
