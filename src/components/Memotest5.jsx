@@ -118,10 +118,6 @@ const Memotest5 = () => {
     localStorage.setItem('puntos', JSON.stringify(puntosTotal));
   };
 
-  console.log(index);
-  console.log(puntosTotal);
-  console.log(puntosCounter);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -132,7 +128,6 @@ const Memotest5 = () => {
       setPistas(0);
       setPuntosCounter(puntosCounter + puntos);
       setPuntosTotal(puntosTotal + puntos);
-      index === 5 && saveLocal();
     } else {
       puntos > 1 && setPuntos(puntos - 1);
       setNombre('Incorrecto');
@@ -259,6 +254,7 @@ const Memotest5 = () => {
                       padding: '5px',
                     }}
                     onClick={() => {
+                      saveLocal();
                       setWin(false);
                       setPuntosTotal(0);
                     }}
