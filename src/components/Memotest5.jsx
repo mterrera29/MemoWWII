@@ -115,8 +115,12 @@ const Memotest5 = () => {
   const [puntosCounter, setPuntosCounter] = useState(0);
 
   const saveLocal = () => {
-    localStorage.setItem('puntos', JSON.stringify(puntosTotal + puntosCounter));
+    localStorage.setItem('puntos', JSON.stringify(puntosTotal));
   };
+
+  console.log(index);
+  console.log(puntosTotal);
+  console.log(puntosCounter);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -127,10 +131,8 @@ const Memotest5 = () => {
       setCorrect(true);
       setPistas(0);
       setPuntosCounter(puntosCounter + puntos);
-      if (index === 5) {
-        setPuntosTotal(puntosTotal + puntosCounter);
-        saveLocal();
-      }
+      setPuntosTotal(puntosTotal + puntos);
+      index === 5 && saveLocal();
     } else {
       puntos > 1 && setPuntos(puntos - 1);
       setNombre('Incorrecto');

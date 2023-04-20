@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
+import { PuntosContext } from '../components/context/PuntosContext';
 import casco from '../images/sombrero-militar2.png';
 import '../components/MemoMain.css';
 const Main = () => {
   const [correct, setCorrect] = useState(false);
+  const [puntosTotal, setPuntosTotal] = useContext(PuntosContext);
   const puntosPartida = JSON.parse(localStorage.getItem('puntos'));
 
   return (
@@ -44,6 +46,7 @@ const Main = () => {
             }}
             onClick={() => {
               setCorrect(true);
+              setPuntosTotal(0);
             }}
           >
             Comenzar!
@@ -67,6 +70,9 @@ const Main = () => {
                     padding: '5px',
                     cursor: 'pointer',
                   }}
+                  onClick={() => {
+                    setPuntosTotal(0);
+                  }}
                 >
                   Jugar Nivel 1
                 </button>
@@ -79,6 +85,9 @@ const Main = () => {
                     padding: '5px',
                     cursor: 'pointer',
                   }}
+                  onClick={() => {
+                    setPuntosTotal(0);
+                  }}
                 >
                   Jugar Nivel 2
                 </button>
@@ -90,6 +99,9 @@ const Main = () => {
                     margin: '10px',
                     padding: '5px',
                     cursor: 'pointer',
+                  }}
+                  onClick={() => {
+                    setPuntosTotal(0);
                   }}
                 >
                   Jugar Nivel 3
