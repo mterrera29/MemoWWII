@@ -109,7 +109,7 @@
     height: auto;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 700px){
     .modalOscuro2{
       height: 100%;
     }
