@@ -120,9 +120,12 @@ const Memotest5 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const nombre1 = name.toLowerCase().split(' ').join('');
+    const nombre2 = lider[index].name2.toLowerCase().split(' ').join('');
+
     if (
-      name.toLowerCase() === lider[index].name ||
-      name.toLowerCase() === lider[index].name2.toLowerCase()
+      nombre1 === lider[index].name.split(' ').join('') ||
+      nombre1 === nombre2
     ) {
       setCorrect(true);
       setPistas(0);
