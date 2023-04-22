@@ -85,11 +85,7 @@
     width: 200px;
     height: auto;
     margin: 5px;
-  }
-  .modalInfo2 div .bandera{
-    width: 200px;
-    height: auto;
-    margin: 5px;
+    border-radius: 14px;
   }
   .modalInfo2 div p{
     margin: 10px;
@@ -102,10 +98,8 @@
     color: rgb(248, 248, 98);
   }
   .modalBandera2{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 100px;
+    width: 200px;
+    margin: 10px;
     height: auto;
   }
 
@@ -172,10 +166,10 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 13px;
+      margin: 5px;
     }
     .modalInfo2 img{
-      width: 220px;
+      width: 200px;
       height: auto;
       border-radius: 14px;
     }
@@ -192,10 +186,7 @@
       font-size: 25px;
     }
     .modalBandera2{
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      width: 70px;
+      width: 50px;
       height: auto;
     }
     .modalBtn2{
